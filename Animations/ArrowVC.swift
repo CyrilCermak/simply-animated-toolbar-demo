@@ -47,6 +47,13 @@ class ArrowVC: AnimationsRootVC {
     
 }
 
+
+
+
+
+
+
+
 extension UIView {
     func rotate360() {
         let animation = CABasicAnimation(keyPath: "transform.rotation")
@@ -77,7 +84,7 @@ extension UIView {
             self.frame.origin.x = point
             self.frame.origin.y = 0
         }, completion: { completed in
-            if completed {                
+            if completed {
                 UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
                     self.frame.origin.x = x
                     self.frame.origin.y = y
