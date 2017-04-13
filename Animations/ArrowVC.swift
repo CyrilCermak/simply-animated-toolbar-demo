@@ -47,13 +47,6 @@ class ArrowVC: AnimationsRootVC {
     
 }
 
-
-
-
-
-
-
-
 extension UIView {
     func rotate360() {
         let animation = CABasicAnimation(keyPath: "transform.rotation")
