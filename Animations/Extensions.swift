@@ -1,53 +1,17 @@
 //
-//  ArrowVC.swift
+//  Extensions.swift
 //  Animations
 //
-//  Created by Cyril on 13/04/17.
+//  Created by Cyril on 14/04/17.
 //  Copyright © 2017 Cyril. All rights reserved.
 //
 
 import Foundation
 import UIKit
-import SnapKit
-
-class ArrowVC: AnimationsRootVC {
-    
-    let imageView = UIImageView(image: UIImage(named: "arrow"))
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.initArrow()
-    }
-    
-    fileprivate func initArrow() {
-        imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapImage)))
-        
-        self.view.addSubview(imageView)
-        imageView.snp.makeConstraints { (make) in
-            make.center.equalTo(self.view)
-            make.width.equalTo(100)
-            make.height.equalTo(100)
-        }
-        
-    }
-    
-    @objc func didTapImage() {
-        ///self.rotate360
-        print("DidTapTheImage")
-        //self.imageView.rotate360()
-//        self.imageView.fadeOut() { completed in
-//            if completed {
-//                self.imageView.fadeIn()
-//            }
-//        }
-        self.imageView.moveToTheRight(point: -20)
-    }
-    
-}
 
 extension UIView {
+    
+    
     func rotate360() {
         let animation = CABasicAnimation(keyPath: "transform.rotation")
         animation.fromValue = 0.0
@@ -61,13 +25,26 @@ extension UIView {
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.alpha = 0
         }, completion: completion)
-
+        
     }
     
     func fadeIn(completion:@escaping(_ completed:Bool) -> Void = {_ in}) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
             self.alpha = 1
         }, completion: completion)
+    }
+    
+    func zoomInAndOut() {
+        self.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
+            self.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }) { (completed) in
+            if completed {
+                UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+                   self.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+                }, completion: nil)
+            }
+        }
     }
     
     func moveToTheRight(point: CGFloat) {
@@ -86,16 +63,3 @@ extension UIView {
         })
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

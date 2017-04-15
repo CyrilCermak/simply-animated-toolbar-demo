@@ -12,8 +12,12 @@
 		F16CE9541EA02712003A60C2 /* AnimationsRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CE9531EA02712003A60C2 /* AnimationsRootVC.swift */; };
 		F16CE9591EA02712003A60C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16CE9581EA02712003A60C2 /* Assets.xcassets */; };
 		F16CE95C1EA02712003A60C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16CE95A1EA02712003A60C2 /* LaunchScreen.storyboard */; };
-		F16CE9641EA02C10003A60C2 /* ArrowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CE9631EA02C10003A60C2 /* ArrowVC.swift */; };
+		F16CE9641EA02C10003A60C2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CE9631EA02C10003A60C2 /* HomeVC.swift */; };
 		F16CE9661EA02EEF003A60C2 /* AnimationsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CE9651EA02EEF003A60C2 /* AnimationsNavigationController.swift */; };
+		F1E676271EA17C9F00712623 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E676261EA17C9F00712623 /* ProfileVC.swift */; };
+		F1E676291EA17CC300712623 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E676281EA17CC300712623 /* BaseVC.swift */; };
+		F1E6762B1EA17D8500712623 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6762A1EA17D8500712623 /* Extensions.swift */; };
+		F1E6762D1EA183FC00712623 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E6762C1EA183FB00712623 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +30,12 @@
 		F16CE9581EA02712003A60C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F16CE95B1EA02712003A60C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16CE95D1EA02712003A60C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F16CE9631EA02C10003A60C2 /* ArrowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowVC.swift; sourceTree = "<group>"; };
+		F16CE9631EA02C10003A60C2 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F16CE9651EA02EEF003A60C2 /* AnimationsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsNavigationController.swift; sourceTree = "<group>"; };
+		F1E676261EA17C9F00712623 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		F1E676281EA17CC300712623 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		F1E6762A1EA17D8500712623 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F1E6762C1EA183FB00712623 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +89,16 @@
 			isa = PBXGroup;
 			children = (
 				F16CE9511EA02712003A60C2 /* AppDelegate.swift */,
-				F16CE9631EA02C10003A60C2 /* ArrowVC.swift */,
 				F16CE9531EA02712003A60C2 /* AnimationsRootVC.swift */,
+				F16CE9651EA02EEF003A60C2 /* AnimationsNavigationController.swift */,
+				F16CE9631EA02C10003A60C2 /* HomeVC.swift */,
+				F1E6762A1EA17D8500712623 /* Extensions.swift */,
+				F1E676261EA17C9F00712623 /* ProfileVC.swift */,
+				F1E6762C1EA183FB00712623 /* SettingsVC.swift */,
+				F1E676281EA17CC300712623 /* BaseVC.swift */,
 				F16CE9581EA02712003A60C2 /* Assets.xcassets */,
 				F16CE95A1EA02712003A60C2 /* LaunchScreen.storyboard */,
 				F16CE95D1EA02712003A60C2 /* Info.plist */,
-				F16CE9651EA02EEF003A60C2 /* AnimationsNavigationController.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -214,10 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E676271EA17C9F00712623 /* ProfileVC.swift in Sources */,
+				F1E676291EA17CC300712623 /* BaseVC.swift in Sources */,
 				F16CE9541EA02712003A60C2 /* AnimationsRootVC.swift in Sources */,
-				F16CE9641EA02C10003A60C2 /* ArrowVC.swift in Sources */,
+				F16CE9641EA02C10003A60C2 /* HomeVC.swift in Sources */,
 				F16CE9661EA02EEF003A60C2 /* AnimationsNavigationController.swift in Sources */,
+				F1E6762D1EA183FC00712623 /* SettingsVC.swift in Sources */,
 				F16CE9521EA02712003A60C2 /* AppDelegate.swift in Sources */,
+				F1E6762B1EA17D8500712623 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
