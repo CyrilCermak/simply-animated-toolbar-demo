@@ -78,7 +78,6 @@ class AnimationsRootVC: UIViewController {
         }
     }
     
-    
     fileprivate func createImageView(withImageName name: String, andSelector  selector: Selector) -> UIImageView {
         let image = UIImage(named: name)!
         let tintedImage = image.withRenderingMode(.alwaysTemplate)

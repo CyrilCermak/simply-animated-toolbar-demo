@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SKSplashView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3A56D02BA6693909F6D46EE3487B7380</key>
+		<key>3DE92767DD5646EEA578EB6F41D12B19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C79760289C7B1C2FC468A2EEA96D18D</key>
+		<key>77B399D4952077FB7B4C8F1E959A5FA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C47AA691DA62144A68EACD620364CFDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

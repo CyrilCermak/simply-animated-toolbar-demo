@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3DE92767DD5646EEA578EB6F41D12B19'
-               BlueprintName = 'SnapKit'
+               BlueprintIdentifier = '77B399D4952077FB7B4C8F1E959A5FA8'
+               BlueprintName = 'SKSplashView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SnapKit.framework'>
+               BuildableName = 'SKSplashView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

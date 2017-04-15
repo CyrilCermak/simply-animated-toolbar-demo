@@ -1,12 +1,15 @@
 PODS:
+  - SKSplashView (0.1.3)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
+  - SKSplashView
   - SnapKit
 
 SPEC CHECKSUMS:
+  SKSplashView: 8148a4893bf2d3dfe28750bc6fd71ae7cb0dda4a
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: af836bf022258d17537b3def91c0756f44944050
+PODFILE CHECKSUM: ecc4b7e9bc5aa332d0e0d44dea9fdc44dacc86ba
 
 COCOAPODS: 1.2.0

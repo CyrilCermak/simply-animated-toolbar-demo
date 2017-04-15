@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         
-        let navVC = AnimationsNavigationController(rootViewController: AnimationsRootVC())
+        let navVC = AnimationsNavigationController(rootViewController: SplashScreenVC())
         self.window = UIWindow()
         self.window?.rootViewController = navVC
         self.window?.makeKeyAndVisible()

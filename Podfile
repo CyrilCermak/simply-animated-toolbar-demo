@@ -7,4 +7,5 @@ target 'Animations' do
 
   # Pods for Animations
   pod 'SnapKit'
+  pod 'SKSplashView'
 end
