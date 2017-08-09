@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SKSplashView
 
 class SplashScreenVC: UIViewController {
     
@@ -41,9 +42,7 @@ class SplashScreenVC: UIViewController {
     }
     
     @objc fileprivate func proceedAnimation() {
-        
         self.imageView.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-        
         UIView.animate(withDuration: 1, delay: 0, animations: {
             self.imageView.transform = CGAffineTransform(scaleX: 5.0, y: 5.0)
             self.imageView.alpha = 0

@@ -21,6 +21,14 @@ extension UIView {
         self.layer.add(animation, forKey: nil)
     }
     
+    func fadeInAndOut() {
+        self.fadeOut() { completed in
+            if completed {
+//                self.imageView.fadeIn()
+            }
+        }
+    }
+    
     func fadeOut(completion:@escaping(_ completed:Bool)->Void) {
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.alpha = 0
